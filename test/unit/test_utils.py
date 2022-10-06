@@ -23,7 +23,11 @@ class TestUtils(unittest.TestCase):
     def test_find_mean(self):
         A = [2, 2, 2, 2, 2, 2]
         mean = utils.find_mean(A)
-        self.assertEquale(mean, 2)
+        self.assertEqual(mean, 2)
+
+        A = [3, 3, 3, 3]
+        mean = utils.find_mean(A)
+        self.assertEqual(mean, 3)
 
     def test_linear_search(self):
         L = random.sample(range(10, 30), 10)
