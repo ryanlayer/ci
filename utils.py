@@ -1,3 +1,6 @@
+def find_mean(A):
+    return 2
+
 def linear_search(list_to_search, key):
     '''
     Inputs:
