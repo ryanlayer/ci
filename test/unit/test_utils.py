@@ -10,6 +10,21 @@ import utils  # nopep8
 
 class TestUtils(unittest.TestCase):
 
+
+    # want to trim a list of lists by the mean of the 
+    # individual lists
+    # - handle empty lists
+    # - test finding the mean of a list def test_find_mean
+    #   - make sure the lists have data types that have a mean
+    # - test fiding the mean of a lists of lists def 
+    #   test_find_means
+    # - test removing some elements of the list by a threshold
+
+    def test_find_mean(self):
+        A = [2, 2, 2, 2, 2, 2]
+        mean = utils.find_mean(A)
+        self.assertEquale(mean, 2)
+
     def test_linear_search(self):
         L = random.sample(range(10, 30), 10)
         L.append(100)
