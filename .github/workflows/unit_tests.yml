@@ -21,7 +21,7 @@ jobs:
       - run: pycodestyle $(git ls-files "*.py")
       
   unit_tests:
-    runs-on: ubuntu-latest
+    runs-on: [macos-latest, ubuntu-latest]
     defaults:
       run:
         shell: bash -l {0}
