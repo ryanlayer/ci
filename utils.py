@@ -1,5 +1,6 @@
+import numpy as np
 def find_mean(A):
-    return 2
+    return np.mean(A)
 
 def linear_search(list_to_search, key):
     '''

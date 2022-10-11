@@ -3,6 +3,7 @@ import os
 import unittest
 import shutil
 import random
+import numpy as np
 src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.append(src_path)
 import utils  # nopep8
@@ -23,7 +24,7 @@ class TestUtils(unittest.TestCase):
     def test_find_mean(self):
         A = [2, 2, 2, 2, 2, 2]
         mean = utils.find_mean(A)
-        self.assertEqual(mean, 2)
+        self.assertEqual(mean, np.mean(A))
 
         A = [3, 3, 3, 3]
         mean = utils.find_mean(A)
